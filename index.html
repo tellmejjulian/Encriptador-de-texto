@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2ce30f9d9c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <img class="encabezado__logo__alura" src="src/Logo.png" alt="Logo Alura">
+        </div>
+        <div class="encabezado__informacion">
+            <h1 class="encabezado__informacion__titulo">ENCRIPTADOR DE TEXTO</h1>
+        </div> 
+    </header>
+    <main class="contenido">
+        <section class="contenido__entrada">
+            <textarea class="contenido__entrada__formulario" id="campoEntrada" placeholder="Ingresa el texto aquí..."></textarea>
+            <div class="contenido__entrada__terminos" id="terminos">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <p class="terminos__texto">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+            </div>
+            <div class="contenido__entrada__btn">
+                <button class="btn__encriptar" id="btnEncriptar" type="button">ENCRIPTAR</button>
+                <button class="btn__desencriptar" id="btnDesencriptar" type="button">DESENCRIPTAR</button>
+            </div>
+        </section>
+        <section class="contenido__salida">
+            <div class="contenido__salida__tarjeta" id="campoTarjeta">
+                <img class="tarjeta__imagen" src="/src/cartel-batman.avif" alt="Imagen persona trabajando">
+                <div class="tarjeta__texto">
+                    <p class="texto__uno">Ningún mensaje fue encontrado.</p>
+                    <p class="texto__dos">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>    
+            </div>
+            <div class="contenido__salida__visualizacion" id="campoVisualizacion">
+                <textarea class="visualizacion__formulario" id="campoSalida" type="mensaje" readonly></textarea>
+                <button class="visualizacion__btn__copiar" id="btnCopiar" type="button">COPIAR</button>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__menu__iconos">
+                <a class="iconos" href="https://www.linkedin.com/in/jjulian-rodriguez-salcedo/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="footer__menu__iconos">
+                <a class="iconos" href="https://github.com/tellmejjulian" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+        <p class="footer__derechos">Copyright &copy 2024, JJulian Rodríguez</p>
+
+    </footer>
+    <script src="script.js"></script>  
+</body>
+</html>
